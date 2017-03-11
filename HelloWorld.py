@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def Helloworld():
+    print ("python 3.5")
     return '<h1>Hello world Welcome to Heroku !!!</h1>'
 
 
