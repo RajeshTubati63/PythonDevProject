@@ -1,0 +1,23 @@
+<html>
+
+<body>
+
+<h1>Restaurants list </h1>
+
+<a href='{{url_for('createNewResturant') }}'>Add New Restaurant</a>
+
+{% for i in restaurants %}
+
+<div>
+
+<p>{{i.name}}</p>  
+ 
+<a href='{{url_for('FindRestaurantMenuByID', restaurant_id = i.id) }}'>View Menu</a>
+
+</div>
+
+{% endfor %}
+
+</body>
+
+</html>
